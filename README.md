@@ -5,4 +5,4 @@
 2. Отрисовка пути модели (Путь строить нужно самому)
 3. Получение информации об очках игроков/игрока
 4. Юзает std::optional
-[Смотри какая штучька!!](https://image.prntscr.com/image/GZewJ6FSSEGQKSLJ6qlaRw.png)
+![Смотри какая штучька!!](https://image.prntscr.com/image/GZewJ6FSSEGQKSLJ6qlaRw.png)
