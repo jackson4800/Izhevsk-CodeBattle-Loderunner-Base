@@ -26,7 +26,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	app_window->initialize(hInstance);
 	run_client("", "", "");
-	gfx = std::make_unique<graphics>(app_window->get_window_handle(), window::falgs_console);
+	gfx = std::make_unique<graphics>(app_window->get_window_handle(), window::flags_console);
 
 	while (app_window->tick())
 		gfx->render_scene(gcb);
