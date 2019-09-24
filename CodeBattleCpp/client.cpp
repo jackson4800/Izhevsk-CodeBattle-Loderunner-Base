@@ -14,7 +14,7 @@ client::client(std::string_view _server, std::string_view _userId, std::string_v
 	path += "/codenjoy-contest/ws?user=";
 	path += _userId;
 	path += "&code=";
-	path += _code;//"ws://35.228.224.190:8080/codenjoy-contest/board/screen-ws?user=l3s5068wayppjvdrubpp"
+	path += _code;
 	statistic_info = "ws://";
 	statistic_info += _server;
 	statistic_info += "/codenjoy-contest/screen-ws?user=";
