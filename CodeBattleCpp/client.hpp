@@ -28,15 +28,16 @@ class client
 {
 	std::vector<std::vector<tile>> map_;
 	std::shared_ptr<game_board> board;
-	easywsclient::WebSocket *web_socket;
+
+	easywsclient::WebSocket* web_socket;
 	std::string path, statistic_info, user_id;
 
 	bool is_running;
-	std::thread *work_thread, *info_thread;
+	std::thread* work_thread;
 	void update_func(std::function<void()> _message_handler);
 
 public:
- 	client(std::string_view _server, std::string_view _userEmail, std::string_view _userPassword = "");
+	client(std::string_view _server, std::string_view _userEmail, std::string_view _userPassword = "");
 	~client();
 
 	void run(std::function<void()> _message_handler);
