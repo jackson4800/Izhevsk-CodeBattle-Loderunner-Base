@@ -98,7 +98,6 @@ void client::update_func(std::function<void()> _message_handler)
 			web_socket1->send(object.dump());
 			});
 		std::this_thread::sleep_for(1ms);
-		std::this_thread::sleep_for(1ms);
 	}
 	if (web_socket)web_socket->close();
 

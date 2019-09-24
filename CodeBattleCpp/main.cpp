@@ -24,9 +24,9 @@ void run_client(std::string_view url, std::string_view user_id, std::string_view
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
 
-	app_window->initialize(hInstance);
+	app_window->initialize(hInstance, window::flags_console);
 	run_client("", "", "");
-	gfx = std::make_unique<graphics>(app_window->get_window_handle(), window::flags_console);
+	gfx = std::make_unique<graphics>(app_window->get_window_handle());
 
 	while (app_window->tick())
 		gfx->render_scene(gcb);
